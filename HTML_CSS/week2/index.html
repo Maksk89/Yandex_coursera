@@ -20,7 +20,7 @@
         <h4>Этапы первой загрузки:</h4>
         <ul>
             <li>подготовка</li>
-            <li>загрузка статики (HTTP-запрос и парсинг)</li>
+            <li>загрузка статики (<abbr title="HyperText Transfer Protocol">HTTP</abbr>-запрос и парсинг)</li>
             <li>исполнение модулей</li>
             <li>инициализация базовых объектов</li>
             <li>отрисовка</li>
@@ -32,7 +32,7 @@
             <li>подготовка к запросу на сервер</li>
             <li>запрос данных с сервера</li>
             <li>шаблонизация</li>
-            <li>обновление DOM</li>
+            <li>обновление <abbr title="Document Object Model">DOM</abbr></li>
         </ul>
     </section>
     <p>
@@ -89,8 +89,8 @@
         <ol>
             <li>включаем gzip</li>
             <li>выставляем заголовки кэширования</li>
-            <li>фризим CSS, JS, шаблоны и картинки</li>
-            <li>используем CDN</li>
+            <li>фризим <abbr title="Cascading Style Sheets">CSS</abbr>, <abbr title="JavaScript">JS</abbr>, шаблоны и картинки</li>
+            <li>используем <abbr title="Content Delivery Network"></abbr>CDN</li>
         </ol>
     </section>
     <p>
@@ -99,13 +99,13 @@
         В браузере же останется просто наложить патч на клиенте.
     </p>
     <p>
-        На самое деле эта идея не нова. Уже существуют стандарты для HTTP — например,
-        RFC 3229 «Delta encoding in HTTP» и «Google SDHC», — но по разным причинам они
+        На самое деле эта идея не нова. Уже существуют стандарты для <abbr title="HyperText Transfer Protocol">HTTP</abbr> — например,
+        RFC 3229 «Delta encoding in <abbr title="HyperText Transfer Protocol">HTTP</abbr>» и «Google <abbr title="Secure Digital High Capacity">SDHC</abbr>», — но по разным причинам они
         не получили должного распространения в браузерах и на серверах.
     </p>
     <section>
-        <h6>Мы же решили сделать свой аналог на JS. Чтобы реализовать этот метод обновления,
-            начали искать реализации diff на JS.</h6>
+        <h6>Мы же решили сделать свой аналог на <abbr title="JavaScript">JS</abbr>. Чтобы реализовать этот метод обновления,
+            начали искать реализации diff на <abbr title="JavaScript">JS</abbr>.</h6>
         <section>
             <h5>На популярных хостингах кода нашли библиотеки:</h5>
             <ol>
